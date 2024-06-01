@@ -1,5 +1,3 @@
-
-
 const fnc = async (text)=> {
  const axios = require('axios');
 
@@ -8,7 +6,7 @@ const options = {
   url: 'https://chatgpt-42.p.rapidapi.com/gpt4',
   headers: {
     'content-type': 'application/json',
-    'X-RapidAPI-Key': '226b974e94msh464512c13602bb7p1651e7jsn723f83da1750',
+    'X-RapidAPI-Key': process.env.RAPIDKEY,
     'X-RapidAPI-Host': 'chatgpt-42.p.rapidapi.com'
   },
   data: {
